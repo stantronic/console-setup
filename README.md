@@ -7,4 +7,7 @@ for...
 * Vim
 * Tmux
 
-...together with some update and installation scripts
+...together with some scripts: 
+
+* update.sh updates the repo from the local machine
+* install.sh updates the local machine according to the repo
