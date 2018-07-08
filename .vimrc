@@ -15,29 +15,37 @@ endif
 
 " Apply plugins
 call plug#begin('~/.vim/bundle')
-Plug 'junegunn/vim-plug'
-Plug 'git://git.wincent.com/command-t.git'
 
-Plug 'tpope/vim-surround'
-" for controlling things like brackets which surround things
+  Plug 'junegunn/vim-plug'
+  " Nice simple vim plugin manager
 
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  Plug 'git://git.wincent.com/command-t.git'
 
-Plug 'keith/swift.vim'
-Plug 'udalov/kotlin-vim'
+  Plug 'tpope/vim-surround'
+  " for controlling things like brackets which surround things
+
+  Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+  " gives you supercool interactive file trees
+
+  Plug 'https://github.com/vim-syntastic/syntastic'
+  " facilitates syntax highlighting etc.
+
+  Plug 'keith/swift.vim'
+  "
+
+  Plug 'udalov/kotlin-vim'
+  "
+
+  " Plug 'noah/vim256-color'
+  " 
+
+  " Color schemes:
+  Plug 'nightsense/stellarized'
+  Plug 'nightsense/snow'
+  Plug 'kadekillary/subtle_solo'
 
 call plug#end()
 
-let wimpMessage ="Arrow keys are for wimps!"
-
-noremap <Up> :echoerr wimpMessage<CR>
-noremap <Down> :echoerr wimpMessage<CR>
-noremap <Left> :echoerr wimpMessage<CR>
-noremap <Right> :echoerr wimpMessage<CR>
-inoremap <Up> <esc>:echoerr wimpMessage<CR>i
-inoremap <Down> <esc>:echoerr wimpMessage<CR>i
-inoremap <Left> <esc>:echoerr wimpMessage<CR>i
-inoremap <Right> <esc>:echoerr wimpMessage<CR>i
 
 
 function! s:swap_lines(n1, n2)
@@ -70,7 +78,21 @@ endfunction
 noremap <silent> _ :call <SID>swap_up()<CR>
 noremap <silent> - :call <SID>swap_down()<CR>
 
+" TODO - refactor wimp message into function
+let wimpMessage ="Arrow keys are for wimps!"
+
+noremap <Up> :echoerr wimpMessage<CR>
+noremap <Down> :echoerr wimpMessage<CR>
+noremap <Left> :echoerr wimpMessage<CR>
+noremap <Right> :echoerr wimpMessage<CR>
+inoremap <Up> <esc>:echoerr wimpMessage<CR>i
+inoremap <Down> <esc>:echoerr wimpMessage<CR>i
+inoremap <Left> <esc>:echoerr wimpMessage<CR>i
+inoremap <Right> <esc>:echoerr wimpMessage<CR>i
+
 nnoremap U <C-r> 
+" Capital U for redo
+  
 set number " Line numbers visible
 set is " Incremental search on
 set hls " Highlight search on
@@ -80,7 +102,10 @@ filetype plugin indent on
 set ruler
 set shiftwidth=2
 set tabstop=2
+set softtabstop=2 "Insert two paces when tab is pressed
 set expandtab
+set ai " Auto indent
+set si " Smart indent
 
 set history=200 " Store 200 commands in history
 set wildmenu " Shows potential matches for search queries
@@ -91,10 +116,20 @@ set bg=dark
 set ignorecase " Make searches case insensitive
 set smartcase " ...unless they contain upper case letters
 set lbr " Only break lines between words
-set ai " Auto indent
-set si " Smart indent
-color delek
 
-syntax on
+set hidden " Allows modifying multiple buffers without saving
+set clipboard=unnamedplus " connects the system clipboard to the unnamed register
+set paste
+
+" Different color scheme for read-only mode (opened with view)
+if v:progname ==? 'view'
+  set bg=light
+  colorscheme subtle_dark
+else
+  set background=dark
+  colorscheme stellarized " delek
+endif
+
+syntax on " nice colourful words :)
 
 " vim: set ft=vim :
