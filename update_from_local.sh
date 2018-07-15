@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-
+# Update this repo from local files
 
 cp ~/.vimrc ./
 echo 'Copied .vimrc to this folder'

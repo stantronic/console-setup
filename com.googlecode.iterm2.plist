@@ -16,8 +16,12 @@
 	<string>manual</string>
 	<key>BadgeFontIsBold</key>
 	<false/>
+	<key>Control</key>
+	<integer>1</integer>
 	<key>Default Bookmark Guid</key>
 	<string>23964CEE-D896-4E29-8ACE-763430A97E6B</string>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -144,6 +148,8 @@
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
+	<key>LeftCommand</key>
+	<integer>7</integer>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>MaxVertically</key>
@@ -151,7 +157,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Repos/MiniProjects/vim_setup</string>
+	<string>~/Repos/MiniProjects/console_setup</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -199,11 +205,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>95 319 606 469 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>129 257 796 473 0 0 1280 800 </string>
+	<string>129 279 796 473 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 216 592 584 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>29 100 810 700 0 0 1280 800 </string>
+	<string>630 225 650 575 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 123 810 677 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
@@ -1012,6 +1018,8 @@
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
+	<key>OpenBookmark</key>
+	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
@@ -1052,7 +1060,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/Stanton/Repos/MiniProjects/vim_setup</string>
+	<string>/Users/Stanton/Repos/MiniProjects/console_setup</string>
 	<key>Print In Black And White</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1066,7 +1074,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-06T17:52:53Z</date>
+	<date>2018-07-15T14:39:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
@@ -1075,6 +1083,10 @@
 	<true/>
 	<key>SmartPlacement</key>
 	<true/>
+	<key>SuppressShellIntegrationUpgradeAnnouncementForHost_Stanton@Stevens-MacBook-Pro.local</key>
+	<true/>
+	<key>SwitchPaneModifier</key>
+	<integer>9</integer>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TmuxDashboardLimit</key>
@@ -1086,6 +1098,8 @@
 		<string>Jobs</string>
 		<string>Recent Directories</string>
 	</array>
+	<key>TripleClickSelectsFullWrappedLines</key>
+	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1477782784</real>
 	<key>WordCharacters</key>
