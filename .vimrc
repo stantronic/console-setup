@@ -130,15 +130,15 @@ set hls " Highlight search on
 
 filetype plugin indent on     
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
 set textwidth=80
 set colorcolumn=+1
 
-set shiftwidth=2
-set tabstop=2
 set softtabstop=2 "Insert two paces when tab is pressed
-set expandtab
-set ai " Auto indent
-set si " Smart indent
+" set ai " Auto indent
+" set si " Smart indent
 
 set history=200 " Store 200 commands in history
 set wildmenu " Shows potential matches for search queries
@@ -153,8 +153,12 @@ set lbr " Only break lines between words
 
 " set hidden " Allows modifying multiple buffers without saving
 set clipboard=unnamedplus " connects the system clipboard to the unnamed register
-set paste
+" set paste
 set ruler
+
+
+iab sheb #!/bin/bash
+iab ant antidesestablishmentarianism
 
 syntax on " nice colourful words :)
 
