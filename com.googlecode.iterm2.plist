@@ -38,6 +38,13 @@
 			<key>Text</key>
 			<string>23964CEE-D896-4E29-8ACE-763430A97E6B</string>
 		</dict>
+		<key>0x6f-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x76-0x140000</key>
 		<dict>
 			<key>Action</key>
@@ -205,11 +212,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>95 319 606 469 0 0 1280 800 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>129 279 796 473 0 0 1280 800 </string>
+	<string>129 262 918 512 0 0 1280 800 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 216 592 584 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>630 225 650 575 0 0 1280 800 </string>
+	<string>0 78 1202 722 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>152 123 810 677 0 0 1280 800 </string>
 	<key>New Bookmarks</key>
@@ -474,7 +481,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1074,7 +1081,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-07-15T14:39:43Z</date>
+	<date>2018-07-18T17:00:33Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

@@ -40,6 +40,7 @@ call plug#begin('~/.vim/bundle')
 
   Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
   " gives you supercool interactive file trees
+  
   Plug 'scrooloose/nerdcommenter'
   " commenting 
 
@@ -60,7 +61,7 @@ call plug#begin('~/.vim/bundle')
   Plug 'udalov/kotlin-vim'
 
 
-  " Color schemes:
+                                " Color schemes:
   Plug 'nightsense/stellarized'
 	Plug 'nightsense/snow'
   Plug 'kadekillary/subtle_solo'
@@ -153,12 +154,11 @@ set lbr " Only break lines between words
 
 " set hidden " Allows modifying multiple buffers without saving
 set clipboard=unnamedplus " connects the system clipboard to the unnamed register
-" set paste
 set ruler
 
+                             " Handy Abbrevitations
 
-iab sheb #!/bin/bash
-iab ant antidesestablishmentarianism
+iab shb #!/bin/bash
 
 syntax on " nice colourful words :)
 
